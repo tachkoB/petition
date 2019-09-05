@@ -1,0 +1,25 @@
+<h1>Join us!</h1>
+<br>
+<form action ="/register" method = "POST">
+
+    <input type="text" name="firstName" placeholder="first name"></input>
+    <br>
+    <br>
+
+    <input type="text" name="lastName" placeholder="last name"></input>
+    <br>
+    <br>
+
+    <input type="text" name="email" placeholder="email"></input>
+    <br>
+    <br>
+
+    <input type="password" name="password" placeholder="password"></input>
+    <br>
+    <br>
+      <input name="_csrf" type="hidden" value="{{csrfToken}}">
+
+ <button type = "submit" id = "submit">Submit</button>
+</form>
+
+ <p>If you already have an account, log in <a href="/login">here</a>.

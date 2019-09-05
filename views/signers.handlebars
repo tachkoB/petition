@@ -1,0 +1,10 @@
+<p>No-longer-friends-list:</p>
+{{#signers}}
+<p>
+    {{#if url}}
+    <a href="{{url}}">{{first}} {{last}}</a>
+{{else}}
+{{first}} {{last}} {{age}}  <a href='/signers/{{city}}'>{{city}}</a>
+	{{/if}}
+</p>
+{{/signers}}

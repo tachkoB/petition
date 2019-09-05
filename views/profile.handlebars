@@ -1,0 +1,16 @@
+<h1>Please fill in information about yourself</h1>
+
+<form action="/profile" method = "POST">
+<input type="text" name="age" placeholder="age"></input>
+<br>
+<br>
+<input type="text" name="city" placeholder="city"></input>
+<br>
+<br>
+<input type="text" name="url" placeholder="website"></input>
+<br>
+<br>
+<input type="hidden" name="_csrf" value="{{csrfToken}}">
+
+<button type = "submit" id = "submit">Submit</button>
+</form>

@@ -1,0 +1,19 @@
+<h1>Stylish petition</h1>
+<br>
+
+<form action ="/welcome" method="POST">
+
+    <p>This petition has two lines of CSS. If you think this petition needs more styling, please sign the following form.</p>
+    <br>
+
+    <input type="hidden" class = "signature" name="signature"></input>
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    <br>
+    <br>
+    <br>
+    <canvas id="canvas" width="500" height="200"></canvas>
+    <br>
+          <button type = "button" id = "clear">Clear</button>
+          <button type = "submit" id = "submit">Submit</button>
+
+</form>

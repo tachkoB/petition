@@ -1,0 +1,21 @@
+<h1>You can update your information here:</h1>
+
+<form method="POST" action="/update" >
+
+    <input type="text" name="first" required>
+    <p>First name</p>
+    <input type="text" name="last" required>
+    <p>Last name</p>
+    <input type="email" name="email"  required>
+    <p>Email</p>
+    <input type="password" name="password">
+    <p>Password</p>
+    <input type="text" name="age">
+    <p>Age</p>
+    <input type="text" name="city">
+    <p>City</p>
+    <input type="text" name="url">
+    <p>Website</p>
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    <button type="submit" name="submit">Submit changes</button>
+</form>

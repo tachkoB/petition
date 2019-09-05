@@ -1,0 +1,14 @@
+<h1> My feelings have been hurt.</h1>
+
+You can find your signature above:
+<img src="{{sigImg}}"></img>
+
+{{#signers}}
+<p>So far, {{count}} people have hurt my feelings.</p>
+<a href = "/signers">Click here to see the rest of the impolite people.</a>
+{{/signers}}
+<br>
+<form method ="POST" action="/thank-you">
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+        <button class="btn" type="submit" name="button">Click here if you wish to delete your signature and become my friend again.</button>
+    </form>
